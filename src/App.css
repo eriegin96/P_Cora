@@ -1,0 +1,102 @@
+.app {
+	position: relative;
+	min-height: 100vh;
+	cursor: default;
+}
+
+.app-container {
+	position: relative;
+	max-width: 900px;
+	margin: auto;
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+h1 {
+	text-transform: uppercase;
+}
+
+.title {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 0;
+}
+
+.player {
+	padding: 4px 20px;
+	background-color: #ccc;
+	border-radius: 4px;
+}
+
+.timer {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: 4px;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+
+.board {
+	margin: auto;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+td {
+	width: 27px;
+	height: 27px;
+	cursor: pointer;
+}
+
+td:hover {
+	border: 1px solid red;
+}
+
+.modal {
+	position: absolute;
+	inset: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 1;
+	overflow: hidden;
+}
+
+.modal__input-name,
+.modal__result {
+	position: fixed;
+	background-color: #ccc;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 10px;
+	text-align: center;
+	border-radius: 4px;
+}
+
+.modal__input-name__form > div {
+	margin: 12px 0;
+}
+
+.modal__input-name__form > div label {
+	margin-right: 4px;
+}
+
+.modal__input-name__form > div input {
+	border: 1px solid black;
+	outline: none;
+}
+
+.modal__result > div {
+	padding: 0 30px 20px;
+}
+
+.modal__result > div h2,
+.modal__result > div h3 {
+	margin-bottom: 10px;
+}
